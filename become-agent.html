@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Become An Agent – Build For Success</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav>
+      <a class="nav-logo" href="index.html"
+        ><img src="image.png" alt="Build For Success"
+      /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="become-agent.html" class="active">Become An Agent</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <a href="become-agent.html" class="nav-cta">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="products.html">Products</a>
+        <a href="become-agent.html">Become An Agent</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="become-agent.html" class="mobile-menu-cta"
+        >Join As Agent — Free</a
+      >
+      <div class="mobile-menu-contact">
+        <div class="mobile-menu-contact-item">
+          <span>📍</span><span>Vienna Street 480, Windhoek</span>
+        </div>
+        <div class="mobile-menu-contact-item">
+          <span>📞</span><span>+264 XX XXX XXXX</span>
+        </div>
+        <div class="mobile-menu-contact-item">
+          <span>✉️</span><span>info@buildforsuccess.com</span>
+        </div>
+      </div>
+      <div class="mobile-menu-socials">
+        <a href="#" title="Facebook">📘</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="WhatsApp">💬</a>
+        <a href="#" title="TikTok">🎵</a>
+      </div>
+    </div>
+
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-grid"></div>
+      <span class="bg-word">HUSTLE</span>
+      <div class="page-eyebrow reveal">Join The Movement</div>
+      <h1 class="page-title reveal">
+        BECOME<br />AN <span class="neon">AGENT</span>
+      </h1>
+      <p class="page-subtitle reveal">
+        No boss. No limit. No fees. Just you, your hustle, and a proven system
+        that pays. Register today and start earning this week.
+      </p>
+    </div>
+
+    <!-- MAIN SPLIT: BENEFITS + FORM -->
+    <div class="agent-split">
+      <div class="agent-split-bg"></div>
+
+      <div style="position: relative; z-index: 1">
+        <div class="section-label reveal">Why Join BFS</div>
+        <div class="section-title reveal" style="margin-bottom: 32px">
+          MAKE MONEY<br /><span class="neon">YOUR WAY.</span>
+        </div>
+        <div class="benefits-full">
+          <div class="bf-item">
+            <div class="bf-icon">🚫</div>
+            <div class="bf-body">
+              <div class="bf-title">Zero Registration Fee</div>
+              <div class="bf-desc">
+                No cost to join. No hidden charges. No risk. We remove every
+                barrier so you can start earning immediately.
+              </div>
+            </div>
+          </div>
+          <div class="bf-item" style="transition-delay: 0.08s">
+            <div class="bf-icon">⏰</div>
+            <div class="bf-body">
+              <div class="bf-title">Work On Your Schedule</div>
+              <div class="bf-desc">
+                Morning, evening, weekend — you decide. BFS fits around your
+                life, not the other way around.
+              </div>
+            </div>
+          </div>
+          <div class="bf-item" style="transition-delay: 0.16s">
+            <div class="bf-icon">♾️</div>
+            <div class="bf-body">
+              <div class="bf-title">Unlimited Earning Potential</div>
+              <div class="bf-desc">
+                No salary cap. No quota ceiling. The harder you push, the more
+                you make. Your income is entirely yours to control.
+              </div>
+            </div>
+          </div>
+          <div class="bf-item" style="transition-delay: 0.24s">
+            <div class="bf-icon">💳</div>
+            <div class="bf-body">
+              <div class="bf-title">7-Day Payout — Guaranteed</div>
+              <div class="bf-desc">
+                Receive your commission within 7 days of confirmed sales. Fast,
+                reliable, every single time. No chasing.
+              </div>
+            </div>
+          </div>
+          <div class="bf-item" style="transition-delay: 0.32s">
+            <div class="bf-icon">📦</div>
+            <div class="bf-body">
+              <div class="bf-title">Real Products People Want</div>
+              <div class="bf-desc">
+                Sell food combos, braai packs, essentials, and event packages —
+                products with genuine demand in every community.
+              </div>
+            </div>
+          </div>
+          <div class="bf-item" style="transition-delay: 0.4s">
+            <div class="bf-icon">🤝</div>
+            <div class="bf-body">
+              <div class="bf-title">Full Support &amp; Community</div>
+              <div class="bf-desc">
+                You're not alone. Join a growing network of agents, get guidance
+                from the BFS team, and grow together.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="position: relative; z-index: 1">
+        <div class="reg-form-wrap reveal" style="transition-delay: 0.1s">
+          <div class="reg-form-title">
+            REGISTER <span class="neon">FREE</span>
+          </div>
+          <div class="reg-form-sub">
+            Fill in your details and a BFS team member will contact you within
+            24 hours to get you started.
+          </div>
+          <div class="reg-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First Name</label
+                ><input
+                  class="form-input"
+                  type="text"
+                  placeholder="Your first name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name</label
+                ><input
+                  class="form-input"
+                  type="text"
+                  placeholder="Your surname"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone / WhatsApp</label
+              ><input class="form-input" type="tel" placeholder="+264 ..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label
+              ><input
+                class="form-input"
+                type="email"
+                placeholder="your@email.com"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Area / Location</label
+              ><input
+                class="form-input"
+                type="text"
+                placeholder="e.g. Katutura, Windhoek North..."
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Product Category</label>
+              <select class="form-select">
+                <option value="">Select a category...</option>
+                <option>Food Combos</option>
+                <option>Braai Packs</option>
+                <option>Everyday Essentials</option>
+                <option>Outdoor &amp; Events</option>
+                <option>All Categories</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">How did you hear about us?</label>
+              <select class="form-select">
+                <option value="">Select...</option>
+                <option>WhatsApp / Friend</option>
+                <option>Social Media</option>
+                <option>Word of Mouth</option>
+                <option>Existing Agent</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="agree" />
+              <label class="form-check-label" for="agree"
+                >I understand there are <strong>no fees</strong> to register and
+                I'm interested in earning commission as a BFS Sales
+                Agent.</label
+              >
+            </div>
+            <button class="submit-btn" onclick="handleSubmit()">
+              Register As Agent — It's Free →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials-section">
+      <div class="section-label reveal" style="text-align: center">
+        Real Agents. Real Results.
+      </div>
+      <div class="section-title reveal" style="text-align: center">
+        WHAT OUR <span class="neon">AGENTS SAY</span>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">
+            I started with BFS part-time and within two months I was earning
+            more than my day job. The flexibility is everything to me as a
+            mother of two.
+          </p>
+          <div class="testi-author">
+            <div class="testi-av">NK</div>
+            <div>
+              <div class="testi-name">Naomi K.</div>
+              <div class="testi-role">Agent – Windhoek North</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay: 0.1s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">
+            BFS gave me a way to earn without needing a degree or experience. I
+            just needed the drive — and they gave me everything else. The 7-day
+            payout is real.
+          </p>
+          <div class="testi-author">
+            <div class="testi-av">TM</div>
+            <div>
+              <div class="testi-name">Titus M.</div>
+              <div class="testi-role">Agent – Katutura</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay: 0.2s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">
+            I was skeptical at first — free to join sounded too good. But it's
+            genuine. I registered, started selling braai packs in my street, and
+            got paid on day 6.
+          </p>
+          <div class="testi-author">
+            <div class="testi-av">SJ</div>
+            <div>
+              <div class="testi-name">Sandra J.</div>
+              <div class="testi-role">Senior Agent – Khomasdal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY BFS EXISTS -->
+    <div class="why-band">
+      <div class="why-left reveal">
+        <h2>
+          WE'RE NOT JUST<br />SELLING PRODUCTS.<br />WE'RE BUILDING<br /><span
+            class="neon"
+            >OPPORTUNITY.</span
+          >
+        </h2>
+        <p>
+          BFS was created to give ordinary people in Namibia an extraordinary
+          chance to earn. No corporate ladder. No gatekeepers. Just a system
+          that works — and people willing to put in the work.
+        </p>
+      </div>
+      <div class="why-stats reveal" style="transition-delay: 0.15s">
+        <div class="why-stat">
+          <span class="why-stat-num">100+</span
+          ><span class="why-stat-label">Active Agents</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-stat-num">N/bin/sh</span
+          ><span class="why-stat-label">To Register</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-stat-num">7</span
+          ><span class="why-stat-label">Day Payouts</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-stat-num">4+</span
+          ><span class="why-stat-label">Product Categories</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-top">
+        <!-- BRAND COLUMN -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="image.png" alt="Build For Success" />
+          </div>
+          <p class="footer-tagline">
+            Building opportunities and creating income for everyday people in
+            Namibia. No fees. No limits. Just hustle.
+          </p>
+          <div class="footer-socials">
+            <a class="footer-social-btn" href="#" title="Facebook">📘</a>
+            <a class="footer-social-btn" href="#" title="Instagram">📸</a>
+            <a class="footer-social-btn" href="#" title="WhatsApp">💬</a>
+            <a class="footer-social-btn" href="#" title="TikTok">🎵</a>
+            <a class="footer-social-btn" href="#" title="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <!-- NAVIGATION COLUMN -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <div class="footer-nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="products.html">Our Products</a>
+            <a href="become-agent.html">Become An Agent</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- CONTACT COLUMN -->
+        <div>
+          <div class="footer-col-title">Contact Us</div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">
+              <strong>Address</strong>Vienna Street 480, Windhoek, Namibia
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">
+              <strong>Phone & WhatsApp</strong>+264 XX XXX XXXX
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">
+              <strong>Email</strong>info@buildforsuccess.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">🌐</span>
+            <div class="footer-contact-text">
+              <strong>Website</strong>www.buildforsuccess.com
+            </div>
+          </div>
+        </div>
+
+        <!-- HOURS COLUMN -->
+        <!-- HOURS + PRODUCTS (hidden on mobile via .footer-col-hours) -->
+        <div class="footer-col-section footer-col-hours">
+          <div class="footer-col-title">Hours</div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-day">Mon – Fri</span
+            ><span class="footer-hours-time">8:00 – 18:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-day">Saturday</span
+            ><span class="footer-hours-time">9:00 – 15:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-day footer-hours-closed">Sunday</span
+            ><span class="footer-hours-time footer-hours-closed">Closed</span>
+          </div>
+          <div style="margin-top: 20px">
+            <div class="footer-col-title">Products</div>
+            <div class="footer-nav-links">
+              <a href="products.html">Food Combos</a>
+              <a href="products.html">Braai Packs</a>
+              <a href="products.html">Essentials</a>
+              <a href="products.html">Outdoor &amp; Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          © 2026 <span>Build For Success</span> · Sales &amp; Marketing · All
+          rights reserved · Windhoek, Namibia
+        </div>
+        <a class="spybitech-badge" href="#" title="Spybitech Namibia">
+          <span>Designed &amp; Hosted by:</span>
+          <img
+            src="spybitechlogo.webp"
+            alt="Spybitech Namibia Logo"
+            loading="lazy"
+          />
+          <strong>Spybitech Namibia</strong>
+        </a>
+      </div>
+    </footer>
+
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span class="ticker-item">NO FEES</span><span class="ticker-sep">•</span
+        ><span class="ticker-item">FLEXIBLE HOURS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">UNLIMITED INCOME</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">7-DAY PAYOUT</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">NO FEES</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">FLEXIBLE HOURS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">UNLIMITED INCOME</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">7-DAY PAYOUT</span
+        ><span class="ticker-sep">•</span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
