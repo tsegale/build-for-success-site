@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Products – Build For Success</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav>
+      <a class="nav-logo" href="index.html"
+        ><img src="image.png" alt="Build For Success"
+      /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="become-agent.html">Become An Agent</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <a href="become-agent.html" class="nav-cta">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="products.html">Products</a>
+        <a href="become-agent.html">Become An Agent</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="become-agent.html" class="mobile-menu-cta"
+        >Join As Agent — Free</a
+      >
+      <div class="mobile-menu-contact">
+        <div class="mobile-menu-contact-item">
+          <span>📍</span><span>Vienna Street 480, Windhoek</span>
+        </div>
+        <div class="mobile-menu-contact-item">
+          <span>📞</span><span>+264 XX XXX XXXX</span>
+        </div>
+        <div class="mobile-menu-contact-item">
+          <span>✉️</span><span>info@buildforsuccess.com</span>
+        </div>
+      </div>
+      <div class="mobile-menu-socials">
+        <a href="#" title="Facebook">📘</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="WhatsApp">💬</a>
+        <a href="#" title="TikTok">🎵</a>
+      </div>
+    </div>
+
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-grid"></div>
+      <span class="bg-word">SELL</span>
+      <div class="page-eyebrow reveal">What You Sell</div>
+      <h1 class="page-title reveal">OUR <span class="neon">PRODUCTS</span></h1>
+      <p class="page-subtitle reveal">
+        Real products that real people want. Choose your category, start
+        selling, and earn commission on every single sale — no experience
+        needed.
+      </p>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCat('all', this)">
+        All Categories
+      </button>
+      <button class="filter-btn" onclick="filterCat('food', this)">
+        Food Combos
+      </button>
+      <button class="filter-btn" onclick="filterCat('braai', this)">
+        Braai Packs
+      </button>
+      <button class="filter-btn" onclick="filterCat('essentials', this)">
+        Essentials
+      </button>
+      <button class="filter-btn" onclick="filterCat('events', this)">
+        Events
+      </button>
+    </div>
+
+    <!-- FOOD COMBOS -->
+    <div class="cat-section reveal" data-cat="food">
+      <div class="cat-header">
+        <div class="cat-num">01</div>
+        <div>
+          <div class="cat-name">FOOD <span class="neon">COMBOS</span></div>
+          <div class="cat-desc-short">
+            Ready-to-sell meal deals and combo packs — always in demand.
+          </div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #200d40, #4a1a80)"
+          >
+            🍱
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Food Combos</div>
+            <div class="prod-card-name">Family Meal Deal</div>
+            <div class="prod-card-desc">
+              Complete family meal package. Hot, filling, and great value —
+              perfect for weekend orders.
+            </div>
+            <span class="prod-card-tag">High Demand</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #1a0d30, #3d1a70)"
+          >
+            🥘
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Food Combos</div>
+            <div class="prod-card-name">Lunch Combo Pack</div>
+            <div class="prod-card-desc">
+              Affordable lunch solutions for workers and students. Easy repeat
+              customers.
+            </div>
+            <span class="prod-card-tag">Repeat Buyers</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #25103a, #501a8a)"
+          >
+            🍗
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Food Combos</div>
+            <div class="prod-card-name">Weekend Special</div>
+            <div class="prod-card-desc">
+              Bulk weekend deal packs — families plan ahead, you earn big on
+              Fridays.
+            </div>
+            <span class="prod-card-tag">Weekend Seller</span>
+          </div>
+        </div>
+        <div class="prod-card prod-card-soon">
+          <div style="font-size: 2rem; color: rgba(168, 85, 247, 0.3)">+</div>
+          <span>More Combos Coming</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAAI PACKS -->
+    <div class="cat-section reveal" data-cat="braai">
+      <div class="cat-header">
+        <div class="cat-num">02</div>
+        <div>
+          <div class="cat-name">BRAAI <span class="neon">PACKS</span></div>
+          <div class="cat-desc-short">
+            Premium braai packages for gatherings, weekends, and events.
+          </div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #2a0808, #6b1515)"
+          >
+            🔥
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Braai Packs</div>
+            <div class="prod-card-name">Classic Braai Pack</div>
+            <div class="prod-card-desc">
+              Everything needed for a traditional Namibian braai. Crowd-pleaser,
+              consistent seller.
+            </div>
+            <span class="prod-card-tag">Best Seller</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #1f0505, #551010)"
+          >
+            🥩
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Braai Packs</div>
+            <div class="prod-card-name">Premium Meat Pack</div>
+            <div class="prod-card-desc">
+              High-quality cuts for those who want the full experience. Great
+              margin for agents.
+            </div>
+            <span class="prod-card-tag">Premium</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #251010, #5a1a1a)"
+          >
+            🍢
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Braai Packs</div>
+            <div class="prod-card-name">Party Braai Bundle</div>
+            <div class="prod-card-desc">
+              Large group pack — ideal for parties and celebrations. High
+              ticket, high commission.
+            </div>
+            <span class="prod-card-tag">High Commission</span>
+          </div>
+        </div>
+        <div class="prod-card prod-card-soon">
+          <div style="font-size: 2rem; color: rgba(168, 85, 247, 0.3)">+</div>
+          <span>More Packs Coming</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESSENTIALS -->
+    <div class="cat-section reveal" data-cat="essentials">
+      <div class="cat-header">
+        <div class="cat-num">03</div>
+        <div>
+          <div class="cat-name">
+            EVERYDAY <span class="neon">ESSENTIALS</span>
+          </div>
+          <div class="cat-desc-short">
+            Daily necessities people always need — steady, reliable income.
+          </div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #081a10, #124a2a)"
+          >
+            🛒
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Essentials</div>
+            <div class="prod-card-name">Monthly Household Pack</div>
+            <div class="prod-card-desc">
+              Core household staples bundled at great value. Customers order
+              every month — you earn monthly.
+            </div>
+            <span class="prod-card-tag">Monthly Orders</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #071510, #0f3d22)"
+          >
+            🧴
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Essentials</div>
+            <div class="prod-card-name">Personal Care Bundle</div>
+            <div class="prod-card-desc">
+              Everyday personal care products. Fast-moving items with strong
+              repeat purchase rates.
+            </div>
+            <span class="prod-card-tag">Fast Moving</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #091a12, #154530)"
+          >
+            🍚
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Essentials</div>
+            <div class="prod-card-name">Pantry Starter Pack</div>
+            <div class="prod-card-desc">
+              The basics every kitchen needs. Affordable price point makes it
+              easy to sell across all markets.
+            </div>
+            <span class="prod-card-tag">Easy Sell</span>
+          </div>
+        </div>
+        <div class="prod-card prod-card-soon">
+          <div style="font-size: 2rem; color: rgba(168, 85, 247, 0.3)">+</div>
+          <span>More Essentials Coming</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="cat-section reveal" data-cat="events">
+      <div class="cat-header">
+        <div class="cat-num">04</div>
+        <div>
+          <div class="cat-name">
+            OUTDOOR <span class="neon">&amp; EVENTS</span>
+          </div>
+          <div class="cat-desc-short">
+            Everything for celebrations, outdoor experiences, and gatherings.
+          </div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #080f1a, #102050)"
+          >
+            🎉
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Events</div>
+            <div class="prod-card-name">Birthday Party Pack</div>
+            <div class="prod-card-desc">
+              Complete party solution — food, snacks, supplies. One sale,
+              multiple products, strong commission.
+            </div>
+            <span class="prod-card-tag">Bundle Deal</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #060c18, #0d1a40)"
+          >
+            🏕️
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Events</div>
+            <div class="prod-card-name">Outdoor Adventure Kit</div>
+            <div class="prod-card-desc">
+              Perfect for camping, outdoor events, and weekend getaways. Growing
+              market in Namibia.
+            </div>
+            <span class="prod-card-tag">Growing Demand</span>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div
+            class="prod-card-img"
+            style="background: linear-gradient(135deg, #09101e, #121f48)"
+          >
+            🎊
+          </div>
+          <div class="prod-card-body">
+            <div class="prod-card-cat">Events</div>
+            <div class="prod-card-name">Corporate Event Package</div>
+            <div class="prod-card-desc">
+              Catering and supply packages for corporate functions. High value
+              per order, high commission.
+            </div>
+            <span class="prod-card-tag">High Value</span>
+          </div>
+        </div>
+        <div class="prod-card prod-card-soon">
+          <div style="font-size: 2rem; color: rgba(168, 85, 247, 0.3)">+</div>
+          <span>More Events Coming</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMISSION BANNER -->
+    <div class="commission-band reveal">
+      <div class="cb-left">
+        <h2>
+          SELL MORE.<br /><span class="neon">EARN MORE.</span><br />NO CEILING.
+        </h2>
+        <p>
+          Every product category carries competitive commission rates. The more
+          you sell across categories, the more you earn. BFS agents who hustle
+          across multiple categories consistently outperform those who stick to
+          one.
+        </p>
+      </div>
+      <div class="cb-right">
+        <div class="cb-item">
+          <div class="cb-icon">💸</div>
+          <div>
+            <div class="cb-text">Commission on Every Sale</div>
+            <div class="cb-sub">
+              Every single product you sell earns you money.
+            </div>
+          </div>
+        </div>
+        <div class="cb-item">
+          <div class="cb-icon">📈</div>
+          <div>
+            <div class="cb-text">Scale Your Income</div>
+            <div class="cb-sub">
+              More sales = more commission. No cap, ever.
+            </div>
+          </div>
+        </div>
+        <div class="cb-item">
+          <div class="cb-icon">🔄</div>
+          <div>
+            <div class="cb-text">Repeat Customer Income</div>
+            <div class="cb-sub">
+              Essentials create monthly recurring buyers.
+            </div>
+          </div>
+        </div>
+        <div class="cb-item">
+          <div class="cb-icon">💳</div>
+          <div>
+            <div class="cb-text">7-Day Payout</div>
+            <div class="cb-sub">Commission paid within 7 days. Always.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-band reveal">
+      <h3>READY TO START <span class="neon">SELLING?</span></h3>
+      <a href="become-agent.html" class="btn-primary">Become An Agent</a>
+    </div>
+
+    <footer>
+      <div class="footer-top">
+        <!-- BRAND COLUMN -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="image.png" alt="Build For Success" />
+          </div>
+          <p class="footer-tagline">
+            Building opportunities and creating income for everyday people in
+            Namibia. No fees. No limits. Just hustle.
+          </p>
+          <div class="footer-socials">
+            <a class="footer-social-btn" href="#" title="Facebook">📘</a>
+            <a class="footer-social-btn" href="#" title="Instagram">📸</a>
+            <a class="footer-social-btn" href="#" title="WhatsApp">💬</a>
+            <a class="footer-social-btn" href="#" title="TikTok">🎵</a>
+            <a class="footer-social-btn" href="#" title="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <!-- NAVIGATION COLUMN -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <div class="footer-nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="products.html">Our Products</a>
+            <a href="become-agent.html">Become An Agent</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- CONTACT COLUMN -->
+        <div>
+          <div class="footer-col-title">Contact Us</div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">
+              <strong>Address</strong>Vienna Street 480, Windhoek, Namibia
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">
+              <strong>Phone & WhatsApp</strong>+264 XX XXX XXXX
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">
+              <strong>Email</strong>info@buildforsuccess.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">🌐</span>
+            <div class="footer-contact-text">
+              <strong>Website</strong>www.buildforsuccess.com
+            </div>
+          </div>
+        </div>
+
+        <!-- HOURS COLUMN -->
+        <!-- HOURS + PRODUCTS (hidden on mobile via .footer-col-hours) -->
+        <div class="footer-col-section footer-col-hours">
+          <div class="footer-col-title">Hours</div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-day">Mon – Fri</span
+            ><span class="footer-hours-time">8:00 – 18:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-day">Saturday</span
+            ><span class="footer-hours-time">9:00 – 15:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-day footer-hours-closed">Sunday</span
+            ><span class="footer-hours-time footer-hours-closed">Closed</span>
+          </div>
+          <div style="margin-top: 20px">
+            <div class="footer-col-title">Products</div>
+            <div class="footer-nav-links">
+              <a href="products.html">Food Combos</a>
+              <a href="products.html">Braai Packs</a>
+              <a href="products.html">Essentials</a>
+              <a href="products.html">Outdoor &amp; Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          © 2026 <span>Build For Success</span> · Sales &amp; Marketing · All
+          rights reserved · Windhoek, Namibia
+        </div>
+        <a class="spybitech-badge" href="#" title="Spybitech Namibia">
+          <span>Designed &amp; Hosted by:</span>
+          <img
+            src="spybitechlogo.webp"
+            alt="Spybitech Namibia Logo"
+            loading="lazy"
+          />
+          <strong>Spybitech Namibia</strong>
+        </a>
+      </div>
+    </footer>
+
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span class="ticker-item">FOOD COMBOS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">BRAAI PACKS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">ESSENTIALS</span
+        ><span class="ticker-sep">•</span><span class="ticker-item">EVENTS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">COMMISSION</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">FOOD COMBOS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">BRAAI PACKS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">ESSENTIALS</span
+        ><span class="ticker-sep">•</span><span class="ticker-item">EVENTS</span
+        ><span class="ticker-sep">•</span
+        ><span class="ticker-item">COMMISSION</span
+        ><span class="ticker-sep">•</span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
