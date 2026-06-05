@@ -2809,6 +2809,42 @@ footer {
   }
 }
 
+/* ── IMAGES IN PRODUCT CARDS ── */
+.prod-card-bg {
+  position: relative;
+  overflow: hidden;
+}
+.prod-card-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.78;
+  transition: transform 0.4s, opacity 0.3s;
+}
+.prod-card-prev:hover .prod-card-bg img {
+  transform: scale(1.07);
+  opacity: 0.92;
+}
+.prod-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+.prod-card:hover .prod-card-img img {
+  transform: scale(1.07);
+}
+
+/* ── SVG ICON COLORS ── */
+.fc-icon svg { color: var(--neon); display: block; }
+.bm-icon svg, .bf-icon svg { color: #fff; display: block; }
+.cb-icon svg { color: var(--neon); display: block; }
+.footer-contact-icon { color: var(--neon); display: flex; align-items: center; }
+.mobile-menu-contact-item span:first-child { color: var(--neon); display: flex; align-items: center; }
+.footer-social-btn svg, .mobile-menu-socials a svg { display: block; pointer-events: none; }
+
 /* ── 400px – SMALL PHONES ── */
 @media (max-width: 400px) {
   .hero-h1 {
