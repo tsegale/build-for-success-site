@@ -1,25 +1,3 @@
-/* ── CURSOR (desktop only) ── */
-(function initCursor() {
-  const cursor = document.getElementById("cursor");
-  const ring = document.getElementById("cursorRing");
-  if (!cursor || !ring) return;
-  let mx = 0,
-    my = 0,
-    rx = 0,
-    ry = 0;
-  document.addEventListener("mousemove", (e) => {
-    mx = e.clientX;
-    my = e.clientY;
-    cursor.style.transform = `translate(${mx - 5}px,${my - 5}px)`;
-  });
-  (function ar() {
-    rx += (mx - rx - 16) * 0.1;
-    ry += (my - ry - 16) * 0.1;
-    ring.style.transform = `translate(${rx}px,${ry}px)`;
-    requestAnimationFrame(ar);
-  })();
-})();
-
 /* ── HAMBURGER MENU ── */
 (function initHamburger() {
   const btn = document.getElementById("hamburger");
@@ -43,12 +21,10 @@
     }
   });
 
-  // Close on link click
   menu.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", closeMenu);
   });
 
-  // Close on outside tap
   document.addEventListener("click", (e) => {
     if (
       menu.classList.contains("open") &&
@@ -59,7 +35,6 @@
     }
   });
 
-  // Close on resize back to desktop
   window.addEventListener("resize", () => {
     if (window.innerWidth > 900) closeMenu();
   });
@@ -165,17 +140,17 @@ function filterCat(cat, btn) {
 function handleSubmit() {
   const btn = document.querySelector(".submit-btn");
   if (!btn) return;
-  btn.textContent = "✓ Submitted! We'll contact you within 24 hours.";
-  btn.style.background = "linear-gradient(135deg,#065f46,#047857)";
-  btn.style.boxShadow = "0 0 24px rgba(16,185,129,.4)";
+  btn.textContent = "Submitted — We'll contact you within 24 hours.";
+  btn.style.background = "#2D6A4F";
+  btn.style.color = "#ffffff";
 }
 
 function handleSend() {
   const btn = document.querySelector(".send-btn");
   if (!btn) return;
-  btn.textContent = "✓ Message Sent! We'll be in touch within 24 hours.";
-  btn.style.background = "linear-gradient(135deg,#065f46,#047857)";
-  btn.style.boxShadow = "0 0 24px rgba(16,185,129,.4)";
+  btn.textContent = "Message Sent — We'll be in touch within 24 hours.";
+  btn.style.background = "#2D6A4F";
+  btn.style.color = "#ffffff";
 }
 
 /* ── NAV SCROLL EFFECT ── */
@@ -185,10 +160,11 @@ function handleSend() {
   window.addEventListener(
     "scroll",
     () => {
-      nav.style.background =
-        window.scrollY > 50 ? "rgba(0,0,0,1)" : "rgba(0,0,0,.95)";
-      nav.style.borderBottomColor =
-        window.scrollY > 50 ? "rgba(168,85,247,.25)" : "rgba(168,85,247,.15)";
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
     },
     { passive: true },
   );
