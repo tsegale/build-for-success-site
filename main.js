@@ -153,6 +153,18 @@ function handleSend() {
   btn.style.color = "#ffffff";
 }
 
+/* ── HERO SLIDESHOW ── */
+(function initHeroSlideshow() {
+  const slides = document.querySelectorAll(".hero-slide");
+  if (slides.length < 2) return;
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 5000);
+})();
+
 /* ── NAV SCROLL EFFECT ── */
 (function initNavScroll() {
   const nav = document.querySelector("nav");
